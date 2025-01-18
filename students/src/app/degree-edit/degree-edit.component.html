@@ -1,0 +1,18 @@
+<div *ngIf="degree">
+    <h2>Edit Degree</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input [(ngModel)]="degree.name" name="name" />
+
+        <label for="code">Code:</label>
+        <input [(ngModel)]="degree.code" name="code" />
+
+        <label for="yeartocomplete">YearToComplete:</label>
+        <input [(ngModel)]="degree.yearsToComplete" name="yeartocomplete" type="number" />
+
+        <label for="active">Active:</label>
+        <input [(ngModel)]="degree.active" name="active" />
+
+        <button style="background-color: rgb(23, 124, 218); color: white;" (click)="saveChanges()">Save Changes</button>
+    </form>
+</div>

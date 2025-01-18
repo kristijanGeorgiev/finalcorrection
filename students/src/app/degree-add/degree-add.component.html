@@ -1,0 +1,23 @@
+<div>
+    <h2>Add New Degree</h2>
+    <form (submit)="addDegree()">
+        <!-- Movie Title -->
+        <label for="name">Name:</label>
+        <input [(ngModel)]="newDegree.name" name="name" required />
+
+        <label for="code">Code:</label>
+        <input [(ngModel)]="newDegree.code" name="code" required />
+
+        <label for="yearstocomplete">YearToComplete:</label>
+        <input [(ngModel)]="newDegree.yearsToComplete" name="yearstocomplete" type="number" required />
+
+        <label for="active">Active:</label>
+        <input [(ngModel)]="newDegree.active" name="active" required />
+
+        <hr>
+        <div style="margin-top: 10px;">
+            <button type="submit">Save Degree</button>
+            <button type="button" class="back-button" (click)="goToDegreeList()">Back</button>
+          </div>
+    </form>
+</div>
